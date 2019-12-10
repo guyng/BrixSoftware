@@ -1,9 +1,16 @@
+Solution 1 Explanation:
+The queue handles take new orders every second, therefore, we will start dequeing(every second) from the queue Cashier Count amount
+of seconds after the first enque.
+
 Solution 1 Time complexity:
 O(ordersCount + cashierCount) seconds.
 Example: In case of 100 orders in line and 5 cashier, it will take 105 seconds to proccess these orders.
 
 Solution 1 Space complexity:
 O(cashierCount) => There are always cashierCount items in the queue.
+
+
+Solution2 Algorithm explanation:
 
 Solution 2 Time Complexity:
 O(1). Explanation: I am using a dictionary to store the sorted strings and for each sorted string i store
