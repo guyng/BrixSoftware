@@ -3,3 +3,6 @@
 ################################################################################
 
 /bin/Debug/netcoreapp3.0
+/obj/Debug/netcoreapp3.0
+/obj
+/.vs/Solutions/v16/Server/sqlite3
