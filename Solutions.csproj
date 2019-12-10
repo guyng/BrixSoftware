@@ -5,12 +5,4 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="README.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="README.txt" />
-  </ItemGroup>
-
 </Project>

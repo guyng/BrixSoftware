@@ -17,16 +17,17 @@ namespace Solutions
 
 		public Solution1()
 		{
-			StartProccessing();
 		}
 
-		public void StartProccessing()
+		public async Task StartProccessing()
 		{
-			Task.Run(() => EnqueToDesk());
-			Task.Run(() => DequeFromDesk());
+			List<Task> tasks = new List<Task>();
+			tasks.Add( Task.Run(() => EnqueToDesk()));
+			tasks.Add(Task.Run(() => DequeFromDesk()));
+			await Task.WhenAll(tasks);
 		}
 
-		public void EnqueToDesk()
+		public Task EnqueToDesk()
 		{
 			while (true)
 			{
@@ -36,7 +37,7 @@ namespace Solutions
 			}
 		}
 
-		public void DequeFromDesk()
+		public Task DequeFromDesk()
 		{
 			Thread.Sleep(1000 * numOfCashier);
 			while (true)

@@ -1,4 +1,4 @@
-﻿Solution 1 Time complexity:
+Solution 1 Time complexity:
 O(ordersCount + cashierCount) seconds.
 Example: In case of 100 orders in line and 5 cashier, it will take 105 seconds to proccess these orders.
 
