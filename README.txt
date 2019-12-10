@@ -10,11 +10,10 @@ Solution 1 Space complexity:
 O(cashierCount) => There are always cashierCount items in the queue.
 
 
-Solution2 Algorithm explanation:
-
-Solution 2 Time Complexity:
-O(1). Explanation: I am using a dictionary to store the sorted strings and for each sorted string i store
+Solution2 Explanation:
+I am using a dictionary to store the sorted strings and for each sorted string i store
 a list of matched string(letter order does not matter). 
+Solution 2 Time Complexity: O(1).
 To search a string, first i need to sort the input string(O(1) since the string length is constant in our case), 
 then i need to look it up in a dictionary(which is O(1) operation), therefore, the total time complexity is O(1).
 
